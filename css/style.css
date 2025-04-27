@@ -1,4 +1,4 @@
-
+/* Загальні стилі для сторінок */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,6 +6,7 @@ body {
   color: #f5f5f5;
 }
 
+/* Стилі для заголовків і меню */
 header {
   background-color: #1a1a1a;
   padding: 20px;
@@ -16,6 +17,7 @@ header h1 {
   margin: 0;
   color: #ffd700;
   font-size: 2em;
+  text-transform: uppercase;
 }
 
 nav {
@@ -33,6 +35,52 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Стилі для головної частини */
+.main-content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 1em;
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Стиль для головної ілюстрації */
+.main-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Стиль для великого заголовка */
+.main-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #ffd700;
+  letter-spacing: 2px;
+}
+
+/* Стилі для підзаголовків */
+.main-content h2, .main-content h3 {
+  color: #ffd700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Стилі для параграфів */
+.main-content p {
+  margin-bottom: 15px;
+}
+
+/* Стилі для пошуку на сторінці contents */
 .search-section {
   text-align: center;
   margin: 20px 0;
@@ -76,10 +124,9 @@ nav a:hover {
   border: 1px solid #ffd700;
   box-shadow: 0 0 10px #ffd700;
   background-color: #2a2a2a;
-  transition: all 0.3s ease;
 }
 
-
+/* Стилі для списку демонів */
 .demon-list-section ul {
   list-style: none;
   padding: 0;
@@ -102,6 +149,7 @@ nav a:hover {
   background: #333;
 }
 
+/* Стилі для картинок демонів */
 .demon-image, .seal-image {
   display: block;
   margin: 20px auto;
@@ -111,6 +159,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
+/* Стилі для кнопок */
 .button {
   display: inline-block;
   margin-top: 20px;
@@ -127,7 +176,7 @@ nav a:hover {
   background-color: #ffd700;
 }
 
-
+/* Стилі для футера */
 footer {
   background-color: #1a1a1a;
   text-align: center;
@@ -135,55 +184,4 @@ footer {
   margin-top: 40px;
   font-size: 0.9em;
   color: #777;
-}
-
-}
-
-.main-content {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  line-height: 1.6;
-  font-size: 1em;
-  background-color: #121212;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
-}
-
-.main-content h2 {
-  color: #ffd700;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.main-content p {
-  margin-bottom: 15px;
-}
-
-  display: block;
-  margin: 20px auto;
-  max-width: 250px;
-  height: auto;
-  border: 2px solid #d4af37;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-}
-
-.main-title {
-  text-align: center;
-  font-size: 2em;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #ffd700;
-  letter-spacing: 2px;
-}
-
-.main-image {
-  display: block;
-  margin: 20px auto;
-  max-width: 300px;
-  height: auto;
-  border: 2px solid #d4af37;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
 }
