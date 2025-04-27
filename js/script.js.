@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('data/demons.json')
+    .then(response => response.json())
+    .then(data => {
+      const list = document.getElementById('demonList');
+      data.demons.forEach(demon => {
+        const li = document.createElement('li');
+        li.textContent = demon.name;
+        li.onclick = () => {
+          window.location.href = demon.page;
+        };
+        list.appendChild(li);
+      });
+
+      const search = document.getElementById('search');
+      search.addEventListener('input', function() {
+        const term = search.value.toLowerCase();
+        const items = document.querySelectorAll('#demonList li');
+        items.forEach(item => {
+          item.style.display = item.textContent.toLowerCase().includes(term) ? 'block' : 'none';
+        });
+      });
+    });
+});
