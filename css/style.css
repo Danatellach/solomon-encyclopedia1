@@ -1,101 +1,84 @@
+
 body {
-  background-color: #121212;
-  color: #f5f5f5;
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
 }
 
-header, footer {
-  background-color: #1f1f1f;
-  color: #d4af37;
-  padding: 10px;
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffd700;
+  font-size: 2em;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: #d4af37;
-  margin: 0 15px;
   text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
 }
 
-h1, h2, h3 {
-  color: #d4af37;
+nav a:hover {
+  text-decoration: underline;
 }
 
-#search {
-  width: 80%;
-  padding: 10px;
-  margin: 20px;
-  border: 1px solid #d4af37;
-  background: #1f1f1f;
-  color: white;
-}
-
-ul#demonList li {
-  list-style: none;
-  margin: 10px 0;
-  padding: 10px;
-  background: #1f1f1f;
-  border: 1px solid #d4af37;
-  transition: background 0.3s, color 0.3s;
-}
-
-ul#demonList li:hover {
-  background: #333;
-  color: #d4af37;
-  cursor: pointer;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Висота на весь екран */
-  background: url('../images/background.jpg') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.6); /* затемнення */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero-content h1 {
-  font-size: 4em;
-  color: #d4af37;
-  margin-bottom: 20px;
-}
-
-.hero-content h2 {
-  font-size: 2em;
-  color: #f5f5f5;
-  margin-bottom: 10px;
-}
-/* Стилі для секції пошуку */
 .search-section {
   text-align: center;
   margin: 20px 0;
 }
 
+.search-wrapper {
+  position: relative;
+  width: 60%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+  color: #d4af37;
+  transition: all 0.3s ease;
+}
+
+.search-wrapper:hover .search-icon {
+  color: #ffd700;
+  transform: translateY(-50%) scale(1.2);
+}
+
 #search {
-  width: 80%;
-  max-width: 500px;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 10px 10px 38px;
   font-size: 1em;
   border: 1px solid #d4af37;
   background: #1f1f1f;
   color: #f5f5f5;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
+
+#search:focus {
+  outline: none;
+  border: 1px solid #ffd700;
+  box-shadow: 0 0 10px #ffd700;
+  background-color: #2a2a2a;
+  transition: all 0.3s ease;
+}
+
 
 .demon-list-section ul {
   list-style: none;
@@ -119,40 +102,41 @@ ul#demonList li:hover {
   background: #333;
 }
 
-
-.hero-content .author {
-  font-size: 1.2em;
-  color: #ccc;
-}
-
-.search-wrapper {
-  position: relative;
-  width: 60%;
-  max-width: 400px;
+.demon-image, .seal-image {
+  display: block;
   margin: 20px auto;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
 }
 
-..search-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2em;
-  color: #d4af37;
-  transition: all 0.3s ease; 
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #d4af37;
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
-.search-wrapper:hover .search-icon {
-  color: #ffd700;
-  transform: translateY(-50%) scale(1.2);
+.button:hover {
+  background-color: #ffd700;
 }
 
-#search:focus {
-  outline: none;
-  border: 1px solid #ffd700; 
-  box-shadow: 0 0 10px #ffd700; 
-  background-color: #2a2a2a; 
-  transition: all 0.3s ease;
+
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
+
 }
 
 
