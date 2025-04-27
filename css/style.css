@@ -97,7 +97,6 @@ ul#demonList li:hover {
   border-radius: 5px;
 }
 
-/* Стилі для списку духів */
 .demon-list-section ul {
   list-style: none;
   padding: 0;
@@ -128,8 +127,8 @@ ul#demonList li:hover {
 
 .search-wrapper {
   position: relative;
-  width: 80%;
-  max-width: 500px;
+  width: 60%;
+  max-width: 400px;
   margin: 20px auto;
 }
 
@@ -140,13 +139,21 @@ ul#demonList li:hover {
   transform: translateY(-50%);
   font-size: 1.2em;
   color: #d4af37;
-  transition: all 0.3s ease; /* Плавність анімації додаємо сюди теж! */
+  transition: all 0.3s ease; 
 }
 
-/* Нове правило для анімації */
 .search-wrapper:hover .search-icon {
   color: #ffd700;
   transform: translateY(-50%) scale(1.2);
 }
+
+#search:focus {
+  outline: none;
+  border: 1px solid #ffd700; 
+  box-shadow: 0 0 10px #ffd700; 
+  background-color: #2a2a2a; 
+  transition: all 0.3s ease;
+}
+
 
 
