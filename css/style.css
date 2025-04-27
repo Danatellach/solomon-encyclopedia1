@@ -150,16 +150,31 @@ footer {
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
-/* Стилі для підзаголовків */
 .main-content h2 {
   color: #ffd700;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-/* Стилі для параграфів */
 .main-content p {
   margin-bottom: 15px;
 }
 
+  display: block;
+  margin: 20px auto;
+  max-width: 250px;
+  height: auto;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #ffd700;
+  letter-spacing: 2px;
+}
 
