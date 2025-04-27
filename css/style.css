@@ -80,6 +80,46 @@ ul#demonList li:hover {
   color: #f5f5f5;
   margin-bottom: 10px;
 }
+/* Стилі для секції пошуку */
+.search-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#search {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #d4af37;
+  background: #1f1f1f;
+  color: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* Стилі для списку духів */
+.demon-list-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.demon-list-section li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #1f1f1f;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.demon-list-section li:hover {
+  background: #333;
+}
+
 
 .hero-content .author {
   font-size: 1.2em;
