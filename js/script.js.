@@ -2,23 +2,39 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch('data/demons.json')
     .then(response => response.json())
     .then(data => {
-      const list = document.getElementById('demonList');
-      data.demons.forEach(demon => {
+      const demonList = document.getElementById('demonList');
+
+      data.demons.forEach(function(demon) {
         const li = document.createElement('li');
         li.textContent = demon.name;
-        li.onclick = () => {
+        li.style.cursor = 'pointer';
+
+        // При кліку переходимо на сторінку духа
+        li.addEventListener('click', function() {
           window.location.href = demon.page;
-        };
-        list.appendChild(li);
+        });
+
+        demonList.appendChild(li);
       });
 
-      const search = document.getElementById('search');
-      search.addEventListener('input', function() {
-        const term = search.value.toLowerCase();
-        const items = document.querySelectorAll('#demonList li');
-        items.forEach(item => {
-          item.style.display = item.textContent.toLowerCase().includes(term) ? 'block' : 'none';
+      // Додаємо функцію пошуку
+      const searchInput = document.getElementById('search');
+      searchInput.addEventListener('input', function() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const demons = demonList.getElementsByTagName('li');
+
+        Array.from(demons).forEach(function(demonItem) {
+          const text = demonItem.textContent.toLowerCase();
+          if (text.includes(searchTerm)) {
+            demonItem.style.display = 'block';
+          } else {
+            demonItem.style.display = 'none';
+          }
         });
       });
+    })
+    .catch(function(error) {
+      console.error('Помилка завантаження списку духів:', error);
     });
 });
+
