@@ -152,3 +152,9 @@ ul#demonList li:hover {
   border-radius: 5px;
 }
 
+.search-wrapper:hover .search-icon {
+  color: #ffd700;
+  transform: translateY(-50%) scale(1.2);
+  transition: all 0.3s ease;
+}
+
