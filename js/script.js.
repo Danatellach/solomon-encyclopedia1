@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         li.textContent = demon.name;
         li.style.cursor = 'pointer';
 
-        // При кліку переходимо на сторінку духа
         li.addEventListener('click', function() {
           window.location.href = demon.page;
         });
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         demonList.appendChild(li);
       });
 
-      // Додаємо функцію пошуку
       const searchInput = document.getElementById('search');
       searchInput.addEventListener('input', function() {
         const searchTerm = searchInput.value.toLowerCase();
@@ -25,11 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         Array.from(demons).forEach(function(demonItem) {
           const text = demonItem.textContent.toLowerCase();
-          if (text.includes(searchTerm)) {
-            demonItem.style.display = 'block';
-          } else {
-            demonItem.style.display = 'none';
-          }
+
+            demonItem.style.display = text.includes(searchTerm) ? 'block' : 'none';
         });
       });
     })
