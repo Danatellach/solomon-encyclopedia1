@@ -185,3 +185,44 @@ footer {
   font-size: 0.9em;
   color: #777;
 }
+
+.seal-image {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+}
+
+.spells {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.spells h2, .spells h3 {
+  color: #f5d76e;
+}
+
+.spells p {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.main-image {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid #d4af37;
+}
+
+/* Стиль для зображень з обтіканням тексту */
+.float-image { 
+  float: right;
+  width: 400px;
+  margin: 0 0 20px 20px;
+  border-radius: 10px;
+  border: 2px solid #d4af37;
+}
