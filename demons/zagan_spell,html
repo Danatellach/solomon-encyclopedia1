@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Печать та заклинання Загана</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Печаті та заклинання Загана</h1>
+  <nav>
+    <a href="../index.html">Головна</a>
+    <a href="../contents.html">Зміст</a>
+    <a href="zagan.html">Назад до профілю Загана</a>
+  </nav>
+</header>
+
+<main>
+  <img src="../images/seals/zagan_seal.png" alt="Печать Загана" class="seal-image">
+
+  <section class="spells">
+    <h2>Латинь</h2>
+    <p>Invoco te, Zagan, magister transmutationis, veni ad me et ostende potentiam tuam in sapientia et verbo.</p>
+
+    <h2>Англійський переклад</h2>
+    <p>I invoke you, Zagan, master of transmutation, come to me and show your power in wisdom and speech.</p>
+
+    <h2>Український переклад</h2>
+    <p>Я закликаю тебе, Загане, володарю перетворень, прийди до мене й покажи свою силу в мудрості й слові.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Електронна енциклопедія. Автор: Нижиловська Богдана К.</p>
+</footer>
+
+</body>
+</html>
